@@ -28,6 +28,13 @@ https://pypi.org/project/aws-sso-cred-restore
 
 `pip install aws-sso-cred-restore==<VERSION>`
 
+## Install using a docker image
+
+* Clone this repo
+* Build the image (inside the project dir): `docker build -t aws-sso-cred-restore:v1 . `
+* (Optional) create an alias to use: `alias awsrestore='docker container run -it -v ~/.aws/:/root/.aws aws-sso-cred-restore:v1'`
+* To use, just execute: `awsrestore`
+
 ## Run a command using AWS SSO credentials
 
 `aws-sso-cred-restore --profile <awsprofilename-or-prefix>`
