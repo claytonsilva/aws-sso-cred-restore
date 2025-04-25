@@ -49,7 +49,7 @@ and restore in `~/.aws/credentials`
 
 ## Export the credentials
 
-There may be circumstances when it is easier/better to set the appropriate environment variables so that they can be re-used by any `aws` command.
+There may be circunstances when it is easier/better to set the appropriate environment variables so that they can be re-used by any `aws` command.
 
 Since the script cannot directly set the environment variables in the calling shell process, it is necessary to use the following syntax:
 
